@@ -1,0 +1,65 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <-- <p>
+        hello world
+    </p>
+    <form>
+        <input type="button" value="assign value" onclick="m()"><br>
+        <input type="button" value="click me" onclick="n()">
+    </form> -->
+    <!-- <script>
+        var person = {
+         firstName: "John",
+         lastName: "Doe",
+         age: 50,
+         eyeColor: "blue",
+        sayhi : function()
+        {
+        document.write("<h1> this is function</h1> ");
+        document.write(this.age);
+        }
+        };
+        document.write(person.lastName+"<br>");
+        document.write(person["firstName"]);
+        person.sayhi();
+        delete person.lastName;
+        delete person['eyeColor'];
+        document.write("<br>"+person.lastName+"<br>");
+        document.write(person.eyeColor);
+        delete person;
+        document.write(person.firstName);
+        </script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html> --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum</title>
+</head>
+<body>
+    <input id="firstNumber" type="text" placeholder="First number"><br><br>
+    <input id="secondNumber"  type="text" placeholder="First number"><br><br>
+    <button onclick="populateDiv()">Calculate Sum</button><br><br><br><br>
+    <div id="finalSum"></div>
+    <script>
+        function populateDiv()
+        {
+            
+            const a=document.getElementById("firstNumber").value;
+            const b=document.getElementById("secondNumber").value;
+            const element=document.getElementById("finalSum");
+            element.innerHTML=parseInt(a)+parseInt(b);
+        }
+    </script>
+</body>
+</html>
